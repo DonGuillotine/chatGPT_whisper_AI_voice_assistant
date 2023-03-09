@@ -14,7 +14,7 @@ def decipher(audio):
     audio_file = open(audio, "rb")
     deciphere = openai.Audio.transcribe("whisper-1", audio_file)
     print(decipher)
-    return "Decipher Me"
+    return decipher["text"]
 
 
 # Using Gradio's audio Interface
