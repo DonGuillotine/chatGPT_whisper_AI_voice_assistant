@@ -12,9 +12,9 @@ def decipher(audio):
 
     # Using openAI's speech to text model
     audio_file = open(audio, "rb")
-    deciphere = openai.Audio.transcribe("whisper-1", audio_file)
-    print(decipher)
-    return decipher["text"]
+    transcript = openai.Audio.transcribe("whisper-1", audio_file)
+    print(transcript)
+    return transcript["text"]
 
 
 # Using Gradio's audio Interface
