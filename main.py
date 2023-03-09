@@ -1,7 +1,8 @@
 import gradio as gr
 import openai
 from decouple import config
-
+from gtts import gTTS
+import os
 
 openai.api_key = config("OPENAI_API_KEY")
 
@@ -9,6 +10,9 @@ openai.api_key = config("OPENAI_API_KEY")
 messages = [
     {"role": "system", "content": "You are a helpful assistant."},
 ]
+
+
+language = 'en'
 
 
 # Main method goes here
@@ -27,6 +31,10 @@ def decipher(audio):
     )
 
     system_message = response["choices"][0]["message"]["content"]
+    myobj = gTTS(text=system_message, lang=language, slow=False)
+    myobj.save("welcome.mp3")
+    # Playing the converted file
+    os.system("start welcome.mp3")
     messages.append({"role": "assistant", "content": system_message},)
 
     chat_transcript = ""
