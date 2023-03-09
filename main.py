@@ -29,9 +29,12 @@ def decipher(audio):
     system_message = response["choices"][0]["message"]["content"]
     messages.append({"role": "assistant", "content": system_message},)
 
-    print(response)
+    chat_transcript = ""
+    for message in messages:
+        if message['role'] != 'system':
+            chat_transcript += message['role'] + ": " + message['content'] + "\n\n"
 
-    return transcript["text"]
+    return chat_transcript
 
 
 # Using Gradio's audio Interface
