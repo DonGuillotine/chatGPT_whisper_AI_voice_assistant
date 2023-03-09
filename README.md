@@ -52,8 +52,7 @@ Installation
 
 1.  Clone the repository: `git clone https://github.com/DonGuillotine/chatGPT_whisper_AI_voice_assistant.git`
 2.  Install the required Python packages: `pip install -r requirements.txt`
-3.  If you are a Windows user, install the win32com package: `pip install pywin32`
-4.  Sign up for ChatGPT API key from <https://beta.openai.com/signup/>
+3.  Sign up for ChatGPT API key from <https://beta.openai.com/signup/>
 
 Contributing
 ------------
