@@ -1,4 +1,5 @@
 import gradio as gr
+import openai 
 
 
 # Main method goes here
