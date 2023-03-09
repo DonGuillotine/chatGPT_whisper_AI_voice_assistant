@@ -21,6 +21,14 @@ The Voice Assistant is equipped with a wide range of features that can be access
 
 -   Entertainment: The Voice Assistant can write poems or tell jokes upon request.
 
+Requirements
+------------
+
+-   Python 3.x
+-   Gradio
+-   ChatGPT API
+-   win32com (for Windows users only)
+
 APIs Used
 ---------
 
@@ -38,6 +46,14 @@ How to Use
 ----------
 
 To use the Voice Assistant, simply open the web-based interface provided by Gradio and click on the microphone button and speak to your assistant!. You can also edit your recorded questions to highlight the best parts. The Voice Assistant will listen to your commands and provide responses as needed.
+
+Installation
+------------
+
+1.  Clone the repository: `git clone https://github.com/DonGuillotine/chatGPT_whisper_AI_voice_assistant.git`
+2.  Install the required Python packages: `pip install -r requirements.txt`
+3.  If you are a Windows user, install the win32com package: `pip install pywin32`
+4.  Sign up for ChatGPT API key from <https://beta.openai.com/signup/>
 
 Conclusion
 ----------
