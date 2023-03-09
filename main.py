@@ -27,6 +27,7 @@ def decipher(audio):
     )
 
     system_message = response["choices"][0]["message"]["content"]
+    messages.append({"role": "assistant", "content": system_message},)
 
     print(response)
 
