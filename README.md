@@ -3,6 +3,9 @@ Voice Assistant with ChatGPT, Whisper API, Gradio, and TTS APIs
 
 My Voice Assistant is an AI-powered chatbot built with the collaboration of several APIs, including ChatGPT, Whisper API, Gradio, and Microsoft's SpVoice TTS API. It can understand natural language commands and provide helpful responses to various queries.
 
+![Screenshot (145)](https://user-images.githubusercontent.com/89584431/224185390-69c0e227-d88c-4612-aa4a-a130dcb76138.png)
+
+
 Features
 --------
 
