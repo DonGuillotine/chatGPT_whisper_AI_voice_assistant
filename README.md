@@ -55,6 +55,11 @@ Installation
 3.  If you are a Windows user, install the win32com package: `pip install pywin32`
 4.  Sign up for ChatGPT API key from <https://beta.openai.com/signup/>
 
+Contributing
+------------
+
+Contributions to this project are welcome. If you encounter any bugs or issues, please open an issue in the repository. If you would like to contribute code, please fork the repository and submit a pull request.
+
 Conclusion
 ----------
 
