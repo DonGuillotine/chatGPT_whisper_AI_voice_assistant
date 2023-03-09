@@ -3,6 +3,8 @@ import openai
 from decouple import config
 from gtts import gTTS
 import os
+import win32com.client
+import pythoncom
 
 openai.api_key = config("OPENAI_API_KEY")
 
@@ -31,10 +33,13 @@ def decipher(audio):
     )
 
     system_message = response["choices"][0]["message"]["content"]
-    myobj = gTTS(text=system_message, lang=language, slow=False)
-    myobj.save("welcome.mp3")
-    # Playing the converted file
-    os.system("start welcome.mp3")
+    pythoncom.CoInitialize()
+    speaker = win32com.client.Dispatch("SAPI.SpVoice")
+    speaker.Speak(system_message)
+    # myobj = gTTS(text=system_message, lang=language, slow=False)
+    # myobj.save("welcome.mp3")
+    # # Playing the converted file
+    # os.system("start welcome.mp3")
     messages.append({"role": "assistant", "content": system_message},)
 
     chat_transcript = ""
