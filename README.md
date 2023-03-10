@@ -15,8 +15,6 @@ The Voice Assistant is equipped with a wide range of features that can be access
 
 -   Recommendations: The Voice Assistant can suggest movies, TV shows, books, and restaurants based on your preferences.
 
--   Reminders and alarms: You can set reminders and alarms using voice commands, and the Voice Assistant will remind you at the designated time.
-
 -   Productivity: The Voice Assistant can perform tasks such as creating a to-do list or scheduling an appointment for your calendar.
 
 -   Entertainment: The Voice Assistant can write poems or tell jokes upon request.
