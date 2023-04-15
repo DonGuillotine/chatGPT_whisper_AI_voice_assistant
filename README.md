@@ -15,8 +15,6 @@ The Voice Assistant is equipped with a wide range of features that can be access
 
 -   Recommendations: The Voice Assistant can suggest movies, TV shows, books, and restaurants based on your preferences.
 
--   Reminders and alarms: You can set reminders and alarms using voice commands, and the Voice Assistant will remind you at the designated time.
-
 -   Productivity: The Voice Assistant can perform tasks such as creating a to-do list or scheduling an appointment for your calendar.
 
 -   Entertainment: The Voice Assistant can write poems or tell jokes upon request.
@@ -52,8 +50,7 @@ Installation
 
 1.  Clone the repository: `git clone https://github.com/DonGuillotine/chatGPT_whisper_AI_voice_assistant.git`
 2.  Install the required Python packages: `pip install -r requirements.txt`
-3.  If you are a Windows user, install the win32com package: `pip install pywin32`
-4.  Sign up for ChatGPT API key from <https://beta.openai.com/signup/>
+3.  Sign up for ChatGPT API key from <https://beta.openai.com/signup/>
 
 Contributing
 ------------
