@@ -50,7 +50,7 @@ def decipher(audio):
     return chat_transcript
 
 
-# Using Gradio's audio Interface
+# Using Gradio's audio Interface 
 interface = gr.Interface(fn=decipher, inputs=gr.Audio(
     source="microphone", type="filepath"), outputs="text").launch()
 interface.launch()
